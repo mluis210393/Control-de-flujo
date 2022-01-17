@@ -1,40 +1,61 @@
 
-function horario(){
+function getDayNumber(){
 
-var mes = (parseInt(prompt("Ingrese numero del mes")))
+var janFirstDayNumber = parseInt(prompt("Tomando en cuenta que el numero de dia se digita del 0 al 6 donde 0 es Lunes y 6 es Domingo. Ingrese el primer dia del año"));
 
-var yearDayNumber   = parseInt(prompt("Ingrese el numero de dia del mes"));
-
-var numeroHora = parseInt(prompt("¿Cual es el numero de hora?"));
+var yearDayNumber   = parseInt(prompt("Tomando en cuenta los 365 dias del año. Ingrese numero de dia del año"));
 
 
+switch(janFirstDayNumber){
 
-let now = new Date([2022,mes,yearDayNumber]);
+case 0:
+
+alert("Lunes");
+
+break;
+
+case 1:
+
+alert("Martes");
+
+break;
+
+case 2:
+
+    alert("Miercoles");
+
+break;
+
+case 3:
+
+    alert("jueves");
+
+break;
+
+case 4:
+
+    alert("Viernes");
+
+break;
+
+case 5:
+
+    alert("Sabado");
+
+break;
+
+case 6:
+
+    alert("Domingo");
+
+    break;
+
+default:
+
+alert("Opcion digitada no existe");
 
 
-if(numeroHora >= 9 && numeroHora <= 18){
 
-    alert(now + " "+ true);
-
-}else if(numeroHora >= 9 && numeroHora <= 18){
-
-    alert(now + " "+ true);
-}else if(numeroHora >= 9 && numeroHora <= 18){
-
-    alert(now + " "+ true);
-}else if(numeroHora >= 9 && numeroHora <= 18){
-
-    alert(now + " "+ true);
-}else if(numeroHora >= 9 && numeroHora <= 18){
-
-    alert(now + " "+ true);
-}else if(numeroHora >= 9 && numeroHora <= 18){
-
-    alert(now + " "+ true);
-}else if(numeroHora >= 9 && numeroHora <= 18){
-
-    alert(now + " "+ true);
-} else{ alert("Error fuera de horario")}   
 
 
 
@@ -42,5 +63,11 @@ if(numeroHora >= 9 && numeroHora <= 18){
 
 }
 
-horario();
+
+
+
+
+}
+
+getDayNumber();
  
