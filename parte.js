@@ -6,6 +6,7 @@ var janFirstDayNumber = parseInt(prompt("Tomando en cuenta que el numero de dia 
 var yearDayNumber   = parseInt(prompt("Tomando en cuenta los 365 dias del año. Ingrese numero de dia del año"));
 
 
+    
 switch(janFirstDayNumber){
 
 case 0:
@@ -59,15 +60,18 @@ alert("Opcion digitada no existe");
 
 
 
+}
+
+var residuo= yearDayNumber % 7; 
+    var diaFinal = (janFirstDayNumber+residuo)%7;
+    return final;
+
+    alert("EL dia anterior del año es: " + final);
 
 
 }
 
 
-
-
-
-}
 
 getDayNumber();
  
